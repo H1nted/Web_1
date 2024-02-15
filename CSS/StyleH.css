@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+/* !######################################### EVERYTHING */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    background-color: #1A1A1D;
+}
+
+/* !######################################### HEADER */
+li, a, button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size:16px;
+    color:#edf0f1;
+    text-decoration: none; /* * bch na7i l surlignement mauve mta3 links */
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 4%; /*? ! comme si nzid fl hwe fi west el sandou9 15 = fou9 wellouta 4% = 3al ajneb */
+}
+
+/* ?############# lenna bch nba3bes les classes */
+.nav__links {
+    list-style: none;
+}
+
+/* ?############# lenna bch nba3bes l7ajet li fi west les classes */
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px; /*first one is horizontal second one is vertical */
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color:#6F2232;
+}
+
+.boutonNAV button{
+    margin-left: 20px; /*? margin heya postion mta3 lobjet par rapport lel o5rin*/
+    color: #c5c6c7;
+    padding: 9px 20px; /*? padding position mta3 lobjet fi west ro7o */
+    background-color: rgba(149, 7, 64, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    /* transition: all 0.3s ease 0s; */
+}
+
+/* ?############# lenna bch nzid haja l element fi west classe */
+.boutonNAV button:hover {
+    background-color: rgba(149, 7, 64, 0.8);
+}
+
+.logo_container{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.logo_container h1{
+    color:#C3073F;
+    height : 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 64px;
+    font-weight: 800;
+}
+
+.logo_container h1 span{
+    color:#4E4E50;
+    font-weight: 700;
+}
+/* !######################################### GENERAL BODY STUFF EVERY PAGE */
+
+body{
+    color:aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* !######################################### Signup PAGE */
+.Signup_form{
+    margin-top: 8rem;
+    padding: 10px 0px;
+    color:aliceblue;
+    text-align: center;
+    font-size:65px;
+}
+
+.Signup_form img{
+    padding: 60px 0px 50px 40px;
+    display:block;
+    margin: auto;
+}
+
+/* !######################################### LOGIN PAGE */
+
+.Login{
+    max-width: 500px;
+    margin: 75px auto;
+    text-align: center;
+}
+
+.loginErr {
+    margin-top: 3rem;
+    font-size:17px;
+    text-align: center;
+    /* margin-left: 7rem;
+    margin-right: 7rem;  */
+    padding: 10px 10px;
+    box-shadow: 0px 10px 30px #ff0f0f;
+    border-radius: 5px;
+}
+.Login label{
+    display:flex;
+    justify-content: center;
+    padding:30px 0% 10px;
+
+}
+.Login input{
+    text-align: center;
+    display:block;
+    color: aliceblue;
+    width: 100%;
+    border : none; /**na7i lborder */
+    border-bottom: 2px solid  rgba(149, 7, 64, 1); /** nzid border loutaneya bark */
+    padding : 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* todo placeholders aligning */
+::-webkit-input-placeholder {
+    text-align: center;
+}
+:-moz-placeholder {
+    text-align: center;
+}
+/* ?############# lenna bch nbadel haja andha id (unique) */
+#cnx_btn{
+    background-color: rgba(149, 7, 64, 1);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px ;
+    width: 50%;
+    margin:auto;
+    margin-top: 40px;
+    transition: all 0.3s ease 0s;
+}
+#cnx_btn:hover{
+    background-color: rgba(149, 7, 64, 0.8);
+}
+
+/* !######################################### HOME PAGE */
+.HomePage img{
+    padding: 60px 0px 50px 40px;
+    display:block;
+    margin: auto;
+}
+
+/* !######################################### trajets */
+.trajets__table{
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.trajets__table th {
+    color: #1A1A1D;
+    background-color: #6F2232;
+    font-size: large;
+    font-weight: 900;
+
+}
+
+.trajets__table th:first-child{
+    border-top-left-radius: 60px;
+}
+
+.trajets__table th:last-child {
+    border-top-right-radius: 60px;
+}
+
+.trajets__table th ,td{
+    text-align: center;
+    margin: auto;
+    padding: 10px 60px;
+    border-style: solid;
+    border-color: #6F2232;
+    
+}
+
+.megabutton{
+    
+    background-color: #1A1A1D;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border:none;
+}
+.boutonCOV{
+    cursor: pointer;
+    color: #1A1A1D;
+    background-color: #6F2232;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border: none;
+    margin:15px 10px;
+    padding: 10px 60px;
+    width:100px;
+    font-size: large;
+    font-weight: 1000;
+}
+
+.megabutton :hover{
+    color:#edf0f1;
+    background-color: #1A1A1D;
+    box-shadow: 1px 10px 10px #6F2232;
+}
+
+/* !######################################### covoiturages */
+
+.booking__form{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.booking__form div{
+    margin:10px 25px;
+    width:600px;
+    display: inline-block;
+    margin-left: 120px;
+    margin-top:50px;
+    padding: 1rem;
+}
+.booking__form label{
+    font-weight: 700;
+    font-size: large;
+    color:rgba(149, 7, 64, 1);
+}
+
+
+.booking__form select{
+    background-color: #6F2232;
+    margin-left: 15px;
+    color:#1A1A1D;
+    width:50%;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    border:2px solid #4E4E50;
+    border-radius: 5px;
+    outline: none;
+}
+.booking__form option{
+    background-color: #6F2232;
+    color:#1A1A1D;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.date input{
+    background-color: #6F2232;
+    color:#1A1A1D;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    border:2px solid #4E4E50;
+    cursor: pointer;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width:50%;
+    text-align: center;
+}
+
+
+#rechercheBTN{
+    font-size: 20px;
+    font-weight:600;
+    background-color: rgba(111, 34, 50, 1);
+    text-align: center;
+    display:block;
+    padding-left: 5px;
+    width: 300px;
+    margin:auto;
+    margin-top: 30px;
+    margin-right: 610px;
+    transition: all 0.3s ease 0s;
+    cursor:pointer;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: #4E4E50;
+    color:black;
+}
+
+#rechercheBTN:hover{
+    background-color: #1A1A1D;
+    color:rgba(111, 34, 50, 1);
+    border-style: solid;
+    border-color:rgba(111, 34, 50, 1) ;
+}
+
+.CovErr{
+    margin-top: 3rem;
+    margin-left: 500px;
+    margin-right: 490px;
+    text-align: center;
+    font-size:17px;
+    padding: 10px 4px;
+    padding-left: 10px;
+    box-shadow: 0px 10px 30px rgba(149, 7, 64, 1);
+    border-radius: 5px;
+}
+
+
+.covliste label{
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.covliste select{
+    background-color: #6F2232;
+    color:#1A1A1D;
+    margin-left: 370px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    border:2px solid #4E4E50;
+    border-radius: 5px;
+    outline: none;
+}
+
+.covliste option{
+    background-color: #6F2232;
+    color:#1A1A1D;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 400px;
+}
+
+/* !######################################### Publier */
+
+.publishing__form{
+    margin-top: 90px;
+
+}
+
+.publishing__form div{
+    align-content: center;
+    
+
+}
+
+.villesP1 {
+    padding-left: 332px;
+    padding-bottom: 50px;
+}
+.villesP2 {
+    padding-left: 339px;
+    padding-bottom: 50px;
+}
+.voyageursP {
+    padding-left: 265px;
+    padding-bottom: 50px;
+}
+.dateP {
+    padding-left: 322px;
+}
+.publishing__form label{
+    font-weight: 700;
+    font-size: large;
+    color:rgba(149, 7, 64, 1);
+}
+
+
+.publishing__form select{
+    background-color: #6F2232;
+    margin-left: 15px;
+    color:#1A1A1D;
+    width:570px;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    border:2px solid #4E4E50;
+    border-radius: 5px;
+    outline: none;
+}
+.publishing__form option{
+    background-color: #6F2232;
+    color:#1A1A1D;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.dateP input{
+    background-color: #6F2232;
+    color:#1A1A1D;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-left: 15px;
+    border:2px solid #4E4E50;
+    cursor: pointer;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width:570px;
+    text-align: center;
+}
+.Infos__table{
+    margin-top: 50px;
+    margin: auto;
+    width: 50%;
+}
+.Infos__table th{
+    color: #1A1A1D;
+    background-color: #6F2232;
+    font-size: large;
+    font-weight: 900;
+    margin: auto;
+    padding: 10px 60px;
+    border-style: solid;
+    border-bottom: none;
+    border-color:#6F2232;
+}
+
+.panier1{
+    float: left;
+    margin-left: 40px;
+    
+}
+.panier2{
+    display: inline-block;
+    
+    
+}
+.panier1 th{
+    color: #1A1A1D;
+    background-color: #6F2232;
+    font-size: large;
+    font-weight: 900;
+    width:725px;
+}
+.panier1 tr:last-child{
+    border-bottom: #6F2232;
+}
+.panier2 th{
+    color: #1A1A1D;
+    background-color: #6F2232;
+    font-size: large;
+    font-weight: 900;
+    width:725px;
+}
+
